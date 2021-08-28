@@ -40,8 +40,7 @@ class ContactForm extends Component {
             value={this.state.name}
             onChange = {this.handleInputChange}
             pattern="^[a-zA-Zа-яА-Я]+(([' -][a-zA-Zа-яА-Я ])?[a-zA-Zа-яА-Я]*)*$"
-            title="
-The name can only consist of letters, apostrophes, dashes and spaces. For example Adrian, Jacob Mercer, Charles de Batz de Castelmore d'Artagnan, etc."
+            title="Имя может состоять только из букв, апострофа, тире и пробелов. Например Adrian, Jacob Mercer, Charles de Batz de Castelmore d'Artagnan и т. п."
             required
             id={this.nameInputId}
             autoComplete = "off"
@@ -57,7 +56,7 @@ The name can only consist of letters, apostrophes, dashes and spaces. For exampl
             value={this.state.number}
             onChange = {this.handleInputChange}
             pattern="\+?\d{1,4}?[-.\s]?\(?\d{1,3}?\)?[-.\s]?\d{1,4}[-.\s]?\d{1,4}[-.\s]?\d{1,9}"
-            title="Phone number must be digits and can contain spaces, dashes, parentheses and can start with +"
+            title="Номер телефона должен состоять цифр и может содержать пробелы, тире, круглые скобки и может начинаться с +"
             required
             id={this.phoneNumberInputId}
             autoComplete = "off"
